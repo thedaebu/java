@@ -1,0 +1,5 @@
+** Java
+multi-platform, object-oritneted programming language
+functions are compiled into classes
+Java Virtual Machine loads classes then gets compiled to bytecode
+JVM is comparatively slower
