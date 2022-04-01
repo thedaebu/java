@@ -1,6 +1,7 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 
-public class java_project {
-
+public class java_project {	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hello");
@@ -10,6 +11,23 @@ public class java_project {
 		var example = new java_project();
 		example.ahnnyoung();
 		
+		Integer intArray[] = new Integer[2];
+		System.out.println(intArray.length);
+		
+		ArrayList<Integer> integerArray = new ArrayList<Integer>();
+		integerArray.add(213);
+		integerArray.add(222);
+		System.out.println(integerArray.get(1));
+		
+//		Character chars[] = {'e','a','b'};
+		char[] chars = {'e','b'};
+//		chars[0] = 'e';
+		String word = new String(chars);
+		System.out.println(word);
+		
+		HashMap<String, String> hasher = new HashMap<String, String>();
+		hasher.put("Ichiro", "Suzuki");
+		System.out.println(hasher);
 	}
 	
 	public static void wassup() {
@@ -21,10 +39,3 @@ public class java_project {
 	}
 
 }
-
-// classes have members
-// methods are members that do things
-// properties are members that store things
-
-// public/private - access modifier
-// static - states whether instance of class is needed

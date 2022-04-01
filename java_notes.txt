@@ -1,5 +1,42 @@
-** Java
+## Java
 multi-platform, object-oritneted programming language
 functions are compiled into classes
 Java Virtual Machine loads classes then gets compiled to bytecode
 JVM is comparatively slower
+
+## class
+classes have members
+methods are members that do things
+properties are members that store things
+public/private - access modifier
+static - states whether instance of class is needed
+
+## variable
+# Type name;
+    ex. Integer a;
+        a = 0;
+
+## array
+# Type name[] = new Type[number of items]
+    ex. Integer intArray[] = new Integer[1];
+
+## ArrayList
+# import java.util.ArrayList
+# ArrayList<Type> name = new ArrayList<Type>();
+    ex. ArrayList<Object> objectArrayList = new ArrayList<Object>();
+# properties
+    # .add
+    # .get(index)
+    # .remove(item)
+    # .contains(item)
+    # .size()
+
+## HashMap
+# import java.util.HashMap
+# HashMap name = new HashMap();
+# properties
+    # .put(key, value)
+    # .remove(key)
+    # .contains(key)
+    # .keySet() - return array of keys in hash
+    # .values() = return array of values in hash
