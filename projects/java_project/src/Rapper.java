@@ -4,3 +4,7 @@ public class Rapper {
 	String location;
 	String group;
 }
+
+class Trapper extends Rapper{
+	
+}

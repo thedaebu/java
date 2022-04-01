@@ -35,8 +35,60 @@ static - states whether instance of class is needed
 # import java.util.HashMap
 # HashMap name = new HashMap();
 # properties
+    # .get(key)
     # .put(key, value)
     # .remove(key)
     # .contains(key)
     # .keySet() - return array of keys in hash
     # .values() = return array of values in hash
+
+## class
+# extends - inheritsfrom super classes
+# super - refers to methods in super class
+    ex. class Rapper extends Musician {
+        public void m2 {
+            super.m1();
+        }
+    }
+
+## abstract class
+used as a base class and if instantiation of class is unwanted
+    ex. abstract class Shape {}
+
+## interface
+used between classes where a subclass wants to inherit from multiple classes
+# implements - inherits from multiple classes
+    ex. interface Pet extends Animal, SideKick
+        class Dog implements Pet
+
+## class constructor
+must have same name as class
+constructor overloading is possible depending on arguments given
+super can be used in subclass constructor if superclass constructor has constructor overloading or requires arguments
+    ex. public class Demo {
+            Demo() {
+
+            }
+            Demo(int a) {
+
+            }
+        }
+        class DemoChild {
+            DemoChild() {
+                super(5);
+            }
+        }
+
+## package
+create a jav file
+compile the file
+create the package
+ex. package p1
+    javac demo.jav - compiles code
+    javac -d . demo.java - creates package
+
+## for loops
+ex. String[] wordsArray = {"hello", "world"};
+    for (String word : wordsArray) {
+
+    }
