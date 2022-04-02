@@ -1,3 +1,11 @@
+resources
+cd.lmy.edu ray notes designpatterns
+Maven
+Dropwizard
+Hystrix
+DeepLearning4j
+baelding.com/java-blogs
+
 ## Java
 multi-platform, object-oritneted programming language
 functions are compiled into classes
@@ -20,6 +28,24 @@ static - states whether instance of class is needed
 # Type name[] = new Type[number of items]
     ex. Integer intArray[] = new Integer[1];
 
+## generics
+# generic is a way to dynamically set the type for a parameter
+    ex. class Test<t> {
+            T obj;
+            Test(T obj) {
+                this.obj = obj;
+            }
+            public T getObject() {
+                return this.obj;
+            }
+        }
+        class Main {
+            public static void main(String[] args) {
+                Test<Integer> intObj = new Test<Integer>(12);
+                Test<String> strObj = new Test<String>("hello");
+            }
+        }
+
 ## ArrayList
 # import java.util.ArrayList
 # ArrayList<Type> name = new ArrayList<Type>();
@@ -33,14 +59,15 @@ static - states whether instance of class is needed
 
 ## HashMap
 # import java.util.HashMap
-# HashMap name = new HashMap();
+# HashMap<Object, Object> name = new HashMap<Object, Object>();
+    # types are necessary
 # properties
     # .get(key)
     # .put(key, value)
     # .remove(key)
-    # .contains(key)
+    # .containsKey(key)
     # .keySet() - return array of keys in hash
-    # .values() = return array of values in hash
+    # .values() - return array of values in hash
 
 ## class
 # extends - inheritsfrom super classes
@@ -51,9 +78,14 @@ static - states whether instance of class is needed
         }
     }
 
+## method keywords
+# void - denotes it should not have return value
+# static - static methods can be accessed without creating object of class
+# Type - if method has a return value, the type should be denoted
+
 ## abstract class
 used as a base class and if instantiation of class is unwanted
-    ex. abstract class Shape {}
+    ex. public abstract class Shape {}
 
 ## interface
 used between classes where a subclass wants to inherit from multiple classes
@@ -92,3 +124,24 @@ ex. String[] wordsArray = {"hello", "world"};
     for (String word : wordsArray) {
 
     }
+
+find nuances:
+primitive types
+    are grouped in arrays
+    can be arrayed when equaled to elements in {}
+non-primitive types
+    are grouped in lists
+    lists cannot contain primitive types
+
+length/length()/size()
+    length is for array
+    .length() is for String
+    .size() is for list
+
+==/equals()
+    == is for reference comparison
+    .equals() is for content comparison
+
+int/Integer
+    int is primitive
+    Integer is non-primitive

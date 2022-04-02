@@ -1,10 +1,17 @@
 
 public class Rapper {
 	String name;
-	String location;
 	String group;
-}
-
-class Trapper extends Rapper{
 	
+	Rapper (String aa, String bb) {
+		name = aa;
+		group = bb;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	public String getGroup() {
+		return this.group;
+	}
 }

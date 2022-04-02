@@ -3,23 +3,23 @@ import java.util.HashMap;
 
 public class java_project {	
 	
-	int value1;
-	int value2;
+//	int value1;
+//	int value2;
+//	
+//	java_project() {
+//		value1 = 10;
+//		value2 = 20;
+//	}
+//	
+//	java_project(int a) {
+//		value1 = 10;
+//		value2 = a;
+//	}
 	
-	java_project() {
-		value1 = 10;
-		value2 = 20;
-	}
-	
-	java_project(int a) {
-		value1 = 10;
-		value2 = a;
-	}
-	
-	public void display() {
-		System.out.println("Value1 = "+value1);
-		System.out.println("Value2 = "+value2);
-	}
+//	public void display() {
+//		System.out.println("Value1 = "+value1);
+//		System.out.println("Value2 = "+value2);
+//	}
 	
 	public static void main(String[] args) {
 //		java_project.wassup();
@@ -43,10 +43,13 @@ public class java_project {
 //		hashMap.put("Shoehi", "Ohtani");
 //		System.out.println(hashMap);
 		
-		java_project javaness = new java_project();
-		javaness.display();
-		java_project javaness2 = new java_project(16);
-		javaness2.display();
+//		java_project javaness = new java_project();
+//		javaness.display();
+//		java_project javaness2 = new java_project(16);
+//		javaness2.display();
+		
+		Rapper DMX = new Rapper("DMX", "Ruff Ryders");
+		System.out.println(DMX.getGroup());
 	}
 	
 	public static void wassup() {
