@@ -27,6 +27,17 @@ static - states whether instance of class is needed
 ## array
 # Type name[] = new Type[number of items]
     ex. Integer intArray[] = new Integer[1];
+# properties
+    # Arrays.toString(array) - displays values in array
+        ex. int[] intArray = {1,2,3};
+            Arrays.toString(intArray);
+    # Arrays.deepToString(2d-array) - displays values of 2d-array
+        ex. int[][] intArray = {{1,2,3},{4,5}};
+            Arrays.deepToString(intArray);
+    # Arrays.sort(array) - sorts arrays
+    # Arrays.equals(array1, array2) - compares arrays
+    # Arrays.fill(array, value) - fills all elements in array with value
+    # Arrays.asList(array) - turns array into list object
 
 ## generics
 # generic is a way to dynamically set the type for a parameter
@@ -48,14 +59,18 @@ static - states whether instance of class is needed
 
 ## ArrayList
 # import java.util.ArrayList
-# ArrayList<Type> name = new ArrayList<Type>();
-    ex. ArrayList<Object> objectArrayList = new ArrayList<Object>();
+# List<Type> name = new ArrayList<Type>();
+    ex. List<Object> objectArrayList = new ArrayList<Object>();
 # properties
-    # .add
+    # .add(value)/.add(index, value)
     # .get(index)
     # .remove(item)
     # .contains(item)
     # .size()
+    # .clear() - clears list of values
+    # .toArray() - turns list into array
+# Collections.sort(list) - method to sort a list
+# Collections.reverse(list) - method to reverse a list
 
 ## HashMap
 # import java.util.HashMap
@@ -129,7 +144,7 @@ find nuances:
 primitive types
     are grouped in arrays
     can be arrayed when equaled to elements in {}
-non-primitive types
+non-primitive types/objects
     are grouped in lists
     lists cannot contain primitive types
 
